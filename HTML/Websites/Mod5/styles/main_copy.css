@@ -1,0 +1,80 @@
+body { 
+  width: 800px; /* Setting width  */
+  margin: 0 auto;
+  border: 4px solid black; /*Border Around the body */
+  font-family: sans-serif;
+  background-image: url(bats.gif);
+  background-repeat: repeat;
+}
+.container {
+  box-shadow: 10px 10px 30px black, -10px -10px 30px black; /* The Shadow*/
+  background-color: white;
+}
+.sidebar {
+  width: 160px; /* Width */
+  height: 150px; 
+  margin-top: 25px;
+  float: left; /* Floated Left */
+  position: relative;
+}
+.mainbody {
+  padding-left: 170px; /* Moving body to the left to make spce for Sidebar*/
+  padding-right: 5px;
+  font-weight: 500;
+}
+.footer {
+  border-top: 3px solid black;
+  font-size: small;
+  height: 3em;
+  background-image: linear-gradient(45deg, black, orange, white);
+  clear: both; /* clearing */
+}
+
+header img {
+  float:left;
+  width: 120px;
+}
+footer p {
+  text-align: center;
+  margin-top: 5;
+}
+.header { 
+  border-bottom: 3px solid black;
+  width: 780px;
+  padding: 10px;
+  background-image: linear-gradient(45deg, white, orange, black);
+}
+.a {
+  font-weight: 700;
+  font-size: 250%;
+  margin: 0;  
+  text-indent: 5px;
+}
+.b {
+  font-weight: 700;
+  font-size: 170%;
+  margin-bottom: 15px;
+  text-indent: 8px;
+}
+main h1::first-letter { /* Capitalizing the first letter of the Heading*/
+  font-size: 190%;
+  font-weight: bold
+}
+
+p a {
+  font-weight: bolder;
+}
+
+ul, li {
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+a {
+  color: orange;
+
+}
+
+a:hover {
+  color: green;
+}

@@ -1,0 +1,104 @@
+html {
+  /* Found out i had to put background image here lol :)*/
+  background-image: url(bats.gif);
+}
+
+body {
+  width: 800px;
+  /* Setting width  */
+  margin: 0 auto;
+  border: 4px solid black;
+  /*Border Around the body */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-repeat: repeat;
+}
+
+.container {
+  box-shadow: 10px 10px 30px black, -10px -10px 30px black;
+  /* The Shadow*/
+  background-color: white;
+}
+/*id of the sidebar*/
+aside {
+  width: 160px;
+  /* Width */
+  height: 150px;
+  margin-top: 25px;
+  float: left;
+  /* Floated Left */
+  position: relative;
+}
+
+.header {
+    border-bottom: 3px solid black;
+    width: 780px;
+    padding: 10px;
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+}
+
+.mainbody {
+  padding-left: 170px;
+  /* Moving body to the left to make spce for Sidebar*/
+  padding-right: 5px;
+  font-weight: 500;
+}
+
+.a {
+  font-weight: 700;
+  font-size: 250%;
+  margin: 0;
+  text-indent: 5px;
+}
+
+.b {
+  font-weight: 700;
+  font-size: 170%;
+  text-indent: 12px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  border-top: 3px solid black;
+  font-size: small;
+  height: 3em;
+  background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+  clear: both;
+  /* clearing */
+}
+
+header img {
+  float: left;
+  width: 120px;
+}
+
+footer p {
+  text-align: center;
+}
+
+main h1::first-letter {
+  /* Capitalizing the first letter of the Heading*/
+  font-size: 190%;
+  font-weight: bold
+}
+
+/* i couldnt get bolder to work using this format
+   so i resorted to using style element inside of my <p> 
+   to get it to work i need help with it :) */
+p a {
+  font-weight: bolder;
+}
+
+ul,
+li {   
+  font-weight: bolder;
+  margin: 10px 0;
+}
+/* Link Colors */
+a {
+  color: orange;
+
+}
+
+a:hover {
+  color: green;
+}

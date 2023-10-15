@@ -1,0 +1,77 @@
+html {
+    background-color: antiquewhite;
+    font-family: 'Playfair Display', Times, serif;
+    font-size: larger;
+    
+}
+main {
+    
+    border-style: solid;
+    border-width: medium;
+    border-radius: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    margin: 25px auto;
+    width: 900px;
+    font-size: medium;
+}
+.purpose { /* Purpose block and its settings*/
+  text-align: center;
+}
+.column h2 {
+    text-decoration: underline;
+}
+.column { /* Columns in the middle and their settings*/
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+header { /* Header Settings*/
+  text-align: center;
+  margin: auto;
+  max-width: 40%;
+  padding-right: 140px;
+}
+
+header img { /* Image Changes*/
+  float:left;
+  width: 150px;
+}
+.column a {
+    text-decoration: none;
+    color: black;
+}
+
+.detailedlook {
+    border-top: 2px solid black;
+}
+.detailedlook a {
+  text-decoration: none;
+  font-size: x-large;
+  /* Getting rid of the blue lin
+  and making the font a size bigger*/
+}
+.footer {
+    text-align: center;
+    font-size: 80%;
+    border-top: 2px solid grey;
+}
+p {
+    font-size: 22px; /* Setting Font size for Paragraph element*/
+}
+
+
+li {
+    margin: 10px 0; /* Spacing between List Items*/
+}
+
+li::hover {
+    padding-bottom: 100px;
+}

@@ -1,0 +1,180 @@
+html {
+    /* Found out i had to put background image here lol :)*/
+    background-image: url(bats.gif);
+}
+
+body {
+    width: 800px;
+    /* Setting width  */
+    margin: 0 auto;
+    border: 4px solid black;
+    /*Border Around the body */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-repeat: repeat;
+    box-shadow: 10px 10px 30px black, -10px -10px 30px black;
+    /* The Shadow*/
+    background-color: white;
+}
+
+.nav_menu ul {
+    list-style: none;
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    text-align: center; /* Text align center for the nav items goes here.*/
+
+}
+
+.nav_menu .current a {
+    color: orange;
+}
+
+.nav_menu .dropdown ul li {
+    width: 130px; /* Adjusted the width of the dropdown to match new text align rather than margin.*/
+    text-align: center;
+    padding: 15px;
+}
+
+.nav_menu .dropdown ul {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.nav_menu .dropdown ul li:hover {
+    background-color: gray
+}
+
+.nav_menu ul li a:hover { /* Personal Change of the color of the text in the nav when hovering*/
+   color: beige;
+}
+
+.nav_menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_menu ul li {
+    float: left;
+    width: 150px; /* Created a set with for the list items in nav*/
+}
+
+.nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100;
+}
+
+/* I Do not understand this !! */
+.nav_menu ul ul li {
+    float: none;
+}
+
+.nav_menu ul li:hover>ul {
+    display: block;
+}
+
+.nav_menu>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav aside ul {
+    list-style-type: none;
+    float: left;
+    margin-top: 0;
+    padding-left: 0px;
+    margin-bottom: 400px;
+}
+
+nav aside ul li {
+    width: 130px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+    background-color: orange;
+    margin: 25px;
+
+}
+
+nav aside ul li a {
+    display: block;
+    /* clickable box */
+    padding: .5em 0 .5em .5em;
+    /* surrounding space */
+    text-decoration: none;
+    /* links are not underlined */
+    font-weight: bold;
+    color: black;
+}
+
+aside ul li a:hover { /* Moved to appropriate positioning within css file.*/
+    background-color: hwb(36 0% 8%);
+    color: green;
+}
+
+header {
+    border-bottom: 3px solid black;
+    width: 770px;
+    /* Header Linear Gradient Adjustment*/
+    padding: 15px;
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+}
+
+main {
+    /* Moving body to the left to make spce for Sidebar*/
+    padding-right: 5px;
+    font-weight: 500;
+}
+
+.a {
+    font-weight: 700;
+    font-size: 250%;
+    margin: 0;
+    text-indent: 5px;
+}
+
+.b {
+    font-weight: 700;
+    font-size: 170%;
+    text-indent: 12px;
+    margin-bottom: 15px;
+}
+
+footer {
+    border-top: 3px solid black;
+    font-size: small;
+    height: 3em;
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    clear: both;
+    /* clearing */
+}
+
+header img {
+    float: left;
+    width: 120px;
+}
+
+footer p {
+    text-align: center;
+}
+
+main h1::first-letter {
+    /* Capitalizing the first letter of the Heading*/
+    font-size: 190%;
+    font-weight: bold
+}
+
+/* i couldnt get bolder to work using this format
+   so i resorted to using style element inside of my <p> 
+   to get it to work i need help with it :) */
+p a {
+    font-weight: bolder;
+}
+
+/* Link Colors */
+a {
+    color: orange;
+
+}
+
