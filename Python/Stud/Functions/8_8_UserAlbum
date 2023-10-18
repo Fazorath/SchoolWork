@@ -1,0 +1,20 @@
+def makeAlbum(artistname,albumtitle,songs=None):
+    album = {'Artist Name':artistname,
+            'Album Title':albumtitle,}
+    if songs:
+        album['songs'] = songs
+    
+    return album
+
+while True:
+    artist = input("Who is your Artist: ")
+    albumtitle = input("What is your Album Title: ")
+    songs = input("How many songs: ")
+    exit = input("would you like to quit Y or N: ") 
+    if exit == 'Y':
+        newalbum = makeAlbum(artist,albumtitle,songs)
+        print(newalbum)
+        break
+    newalbum = makeAlbum(artist,albumtitle,songs)
+    print(newalbum)
+    

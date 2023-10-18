@@ -1,0 +1,7 @@
+def buildPerson(first,last,**userinfo): ## ** makes python create an empty dictionary
+    userinfo['first_name'] = first
+    userinfo['last_name'] = last
+    return userinfo
+
+userprofile = buildPerson("yoenis","hernandez",born="cuba",lives="gainesville",hates="injustice",age=19)
+print(userprofile)

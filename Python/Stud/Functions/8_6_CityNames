@@ -1,0 +1,7 @@
+def city_country(city,Country):
+    print(f"{city.title()},{Country.title()}")
+
+
+city_country("berlin","germany")
+city_country("miami","united")
+city_country("berlin","germany")

@@ -1,0 +1,8 @@
+## Setting the defauly Values for both of the Arguments
+def make_shirt(size='Large',text='I love Python'):
+    print(f"The size of the T shirt is: {size}")
+    print(f"The text of the T shirt is: {text}")
+
+
+make_shirt("Extra-Large","Viva la Revolucion")
+make_shirt()
