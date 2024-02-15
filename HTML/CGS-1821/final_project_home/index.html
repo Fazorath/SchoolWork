@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempt - POV Site</title>
+    <meta name="description" content="This is a website that will have multiple videos from which you can choose from. 
+    These videos will range from POV bike rides like this one to POV car rides, and even POV rollercoaster rides.">
+    <meta name="author" content="Yoenis Hernandez">
+    <meta name="year" content="2024">
+    <meta name="class" content="CGS-1821">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.min.js"></script>
+</head>
+
+<body>
+
+    <video id="fullscreen-video" autoplay loop>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <header>
+        <img src="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png"
+            alt="Logo">
+        <p>Exempt</p>
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="https://www.cia.gov/" target="_blank">Warrants</a></li>
+                <li><a href="https://www.nsa.gov/" target="_blank">Escapes</a></li>
+                <li><a href="https://wikileaks.org/" target="_blank">Routes</a></li>
+            </ul>
+        </nav>
+        <nav class="slicknav_menu">
+        </nav>
+
+    </header>
+
+    <div class="text-box">
+        <h2>This is my POV Website</h2>
+        <p>The plan with this website is to have multiple videos from which you can choose from. These videos will range
+            from POV bike rides like this one to POV car rides, and even POV rollercoaster rides.
+            As for now, I am working on the layout of the website and working to make everything work well with eachother
+        </p>
+        <p>As you can see if you direct your eyes towards the footer you will see 2 buttons. One for playing and one for Volume
+            Play around with them and see what happens.
+            I am excited and looking forward to adding more functionality such as a slider for volume
+            and the ability change video.</p>
+        <p id="abilities">Our current abilities are: <strong>Play, Pause</strong>
+        </p>
+    </div>
+
+    <footer>
+        <button class="round-button" onclick="togglePause()">Play</button>
+        <button class="round-button" onclick="toggleVolume()">Vol</button>
+        <p>&copy; 2024 Exempt INC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.nav_menu').slicknav({
+                prependTo: ".slicknav_menu"
+            });
+        });
+    </script>
+    <script>
+        function togglePause() {
+            var video = document.getElementById("fullscreen-video");
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function toggleVolume() {
+            var video = document.getElementById("fullscreen-video");
+            if (video.volume === 0) {
+                video.volume = 1;
+            } else {
+                video.volume = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

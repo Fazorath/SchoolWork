@@ -1,0 +1,93 @@
+Question 1.
+
+select email,manufacturer 
+FROM peopletbl
+JOIN devicestbl ON devicepersonfk=personid
+join emailstbl on emailpersonfk=personid
+WHERE manufacturer="Apple";
+
+Resultset Row size = 7
+------------------------------------------------
+
+Question 2.
+
+SELECT address, carriername
+FROM peopletbl
+JOIN addressestbl ON personid=addresspersonfk
+join devicestbl on personid=devicepersonfk
+JOIN phonenumberstbl ON deviceid=phonedevicefk
+JOIN planstbl ON planid=phoneplanfk
+join carrierstbl ON carrierid=plancarrierfk
+WHERE carriername='Verizon'
+
+Resultset Row Size = 7
+------------------------------------------------
+
+Question 3.
+
+SELECT firstname, lastname, phonetype, manufacturer
+FROM peopletbl
+join devicestbl on personid=devicepersonfk
+JOIN devicetypestbl ON phonetypeid=devicephonetypefk
+where manufacturer="Samsung" AND phonetype='Work'
+
+Resultset Row Size = 0
+-------------------------------------------------
+
+Question 4.
+
+SELECT firstname, lastname,carriername, phonenumber
+FROM peopletbl
+join devicestbl on personid=devicepersonfk
+JOIN phonenumberstbl ON deviceid=phonedevicefk
+JOIN planstbl ON planid=phoneplanfk
+join carrierstbl ON carrierid=plancarrierfk
+WHERE carriername='AT&T'
+
+Resultset Row Size = 2
+--------------------------------------------------
+
+Question 5.
+
+SELECT firstname, lastname, gender, manufacturer
+FROM peopletbl
+join devicestbl on personid=devicepersonfk
+WHERE gender='F' and manufacturer='LG'
+
+Resultset Row Size = 3
+---------------------------------------------------
+
+Question 6.
+
+SELECT firstname, lastname
+FROM peopletbl
+join devicestbl on personid=devicepersonfk
+JOIN phonenumberstbl ON deviceid=phonedevicefk
+JOIN extensionstbl ON extid=phonenumberid
+
+Resultset Row Size = 1
+---------------------------------------------------
+
+Question 7.
+
+SELECT firstname, lastname, phonenumberdate
+FROM peopletbl
+join devicestbl on personid=devicepersonfk
+JOIN phonenumberstbl ON deviceid=phonedevicefk
+WHERE phonenumberdate>="2018/01/01"
+
+Resultset Row Size = 9
+---------------------------------------------------
+
+Question 8. 
+
+SELECT firstname, lastname, city
+FROM peopletbl
+JOIN addressestbl ON personid=addresspersonfk
+join devicestbl on personid=devicepersonfk
+JOIN phonenumberstbl ON deviceid=phonedevicefk
+JOIN planstbl ON planid=phoneplanfk
+join carrierstbl ON carrierid=plancarrierfk
+WHERE carriername='Verizon' and city="Gainesville";
+
+Resultset Row Size = 3

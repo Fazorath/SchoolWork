@@ -1,0 +1,70 @@
+1.  Count the number of each type of device(devicetypestbl)
+SELECT dt.phonetype AS Device_Type, COUNT(*) AS Number_of_Devices
+FROM devicestbl d
+JOIN devicetypestbl dt ON d.devicephonetypefk = dt.phonetypeid
+GROUP BY dt.phonetype;
+
+Result Size = 4
+
+2. Count the number of phones by manufacturer.
+SELECT manufacturer, COUNT(*) AS Phone_Count
+FROM devicestbl
+GROUP BY manufacturer;
+
+Result Size = 4
+
+3.Count the number of people who live in each city.
+SELECT city, COUNT(*) AS Number_of_People
+FROM addressestbl
+GROUP BY city;
+
+Result Size = 5
+
+4.Count the number of females who are on a "Gold" plan(Not sure about this one..)
+SELECT COUNT(*) AS Female_Count_Gold_Plan
+FROM peopletbl p
+JOIN addressestbl a ON p.personid = a.addresspersonfk
+JOIN phonenumberstbl ph ON a.addressid = ph.phonedevicefk
+JOIN planstbl pl ON ph.phoneplanfk = pl.planid
+JOIN devicestbl d ON ph.phonedevicefk = d.deviceid
+JOIN devicetypestbl dt ON d.devicephonetypefk = dt.phonetypeid
+WHERE p.gender = 'F'
+AND pl.planname IN ('Glitzy Gold', 'Gold Goodies', 'Gold Goodness');
+
+Result Size = 1
+
+5.Find the lowest-priced plan
+SELECT *
+FROM planstbl
+ORDER BY planprice ASC
+LIMIT 1;
+
+Result Size = 1
+
+6.Create an ascending list of SIM numbers along withy manufacturer and model number 
+SELECT pt.sim AS SIM_Number, d.manufacturer, d.model
+FROM phonenumberstbl pt
+JOIN devicestbl d ON pt.phonedevicefk = d.deviceid
+ORDER BY pt.sim ASC;
+
+Result Size = 16
+
+7.Sort phone numbers in the 352 area code in descending order. Phone number format: (352) xxx-xxxx
+SELECT phonenumber
+FROM phonenumberstbl
+WHERE phonenumber LIKE '352%'
+ORDER BY phonenumber DESC;
+
+Result Size = 7
+
+8.List out the three oldest phone numbers for date, planname, carriername, and phonetype
+SELECT ph.phonenumber, pl.planname, c.carriername, dt.phonetype
+FROM phonenumberstbl ph
+JOIN planstbl pl ON ph.phoneplanfk = pl.planid
+JOIN carrierstbl c ON pl.plancarrierfk = c.carrierid
+JOIN devicestbl d ON ph.phonedevicefk = d.deviceid
+JOIN devicetypestbl dt ON d.devicephonetypefk = dt.phonetypeid
+ORDER BY ph.phonenumberdate ASC
+LIMIT 3;
+
+Result Size = 3

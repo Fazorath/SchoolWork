@@ -1,0 +1,21 @@
+Project 6 Todo list
+11/01/23
+1st attempt
+- Will update attempt after every major change
+  to this list
+
+1. Functions
+
+2. Figure out how to use CSV files
+    and what i can do with the columns and shit inside of it 
+
+3. Function for finding the code in the first file
+
+4. Turn those codes to a list.
+    - Print out  the codes
+5. For loop if code in the master file
+
+6. Write to new file
+    - Print out what is being written to new files
+
+7. Pop from list we created for the 'for' loop
