@@ -1,0 +1,6 @@
+It fucking Sucks.
+I do not Like Programming
+This is a loop that never ends
+This will store and append every response
+into this random text file
+while also adding a new line at the end of the file

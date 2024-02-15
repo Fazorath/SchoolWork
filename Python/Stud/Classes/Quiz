@@ -1,0 +1,5 @@
+True/False.  
+In inheritance, you can add any new attributes and methods 
+needed to the parent class from the child class?
+
+    False. Inheritance works the other way around. In object-oriented programming, when a class (child or subclass) inherits from another class (parent or superclass), it inherits the attributes and methods of the parent class. The child class can add new attributes and methods or override existing ones, but these modifications occur in the child class, not the parent class.

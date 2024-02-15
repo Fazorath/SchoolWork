@@ -1,0 +1,4 @@
+first time writing into a file
+Including a 2nd write statement without \n
+This is a new appended line
+This is another new appended line
