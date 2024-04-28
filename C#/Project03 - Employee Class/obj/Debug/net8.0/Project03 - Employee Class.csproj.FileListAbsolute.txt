@@ -1,0 +1,15 @@
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\bin\Debug\net8.0\Project03 - Employee Class.exe
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\bin\Debug\net8.0\Project03 - Employee Class.deps.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\bin\Debug\net8.0\Project03 - Employee Class.runtimeconfig.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\bin\Debug\net8.0\Project03 - Employee Class.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\bin\Debug\net8.0\Project03 - Employee Class.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.AssemblyInfoInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.AssemblyInfo.cs
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.csproj.CoreCompileInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.sourcelink.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\refint\Project03 - Employee Class.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\Project03 - Employee Class.genruntimeconfig.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project03 - Employee Class\obj\Debug\net8.0\ref\Project03 - Employee Class.dll

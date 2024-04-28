@@ -1,0 +1,15 @@
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\bin\Debug\net8.0\Project7-StudentManagement.exe
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\bin\Debug\net8.0\Project7-StudentManagement.deps.json
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\bin\Debug\net8.0\Project7-StudentManagement.runtimeconfig.json
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\bin\Debug\net8.0\Project7-StudentManagement.dll
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\bin\Debug\net8.0\Project7-StudentManagement.pdb
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.AssemblyInfoInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.AssemblyInfo.cs
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.csproj.CoreCompileInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.sourcelink.json
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.dll
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\refint\Project7-StudentManagement.dll
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.pdb
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\Project7-StudentManagement.genruntimeconfig.cache
+C:\Users\Yoenis\Desktop\Class Code\MainArchive\C# REPO\Project7-StudentManagement\obj\Debug\net8.0\ref\Project7-StudentManagement.dll

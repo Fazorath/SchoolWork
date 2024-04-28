@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Project03 - Employee Class/1.0.0": {
+        "runtime": {
+          "Project03 - Employee Class.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project03 - Employee Class/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

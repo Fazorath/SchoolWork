@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D26BFB17-C9EF-4B92-910F-09CBF195678C}|SimpletaskManager.csproj|c:\\users\\yoenis\\desktop\\class code\\mainarchive\\c# repo\\project06-simpletaskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D26BFB17-C9EF-4B92-910F-09CBF195678C}|SimpletaskManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26BFB17-C9EF-4B92-910F-09CBF195678C}|SimpletaskManager.csproj|c:\\users\\yoenis\\desktop\\class code\\mainarchive\\c# repo\\project06-simpletaskmanager\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D26BFB17-C9EF-4B92-910F-09CBF195678C}|SimpletaskManager.csproj|solutionrelative:task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26BFB17-C9EF-4B92-910F-09CBF195678C}|SimpletaskManager.csproj|c:\\users\\yoenis\\desktop\\class code\\mainarchive\\c# repo\\project06-simpletaskmanager\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D26BFB17-C9EF-4B92-910F-09CBF195678C}|SimpletaskManager.csproj|solutionrelative:taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\Task.cs",
+              "RelativeDocumentMoniker": "Task.cs",
+              "ToolTip": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\Task.cs",
+              "RelativeToolTip": "Task.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:56:08.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskManager.cs",
+              "DocumentMoniker": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\TaskManager.cs",
+              "RelativeDocumentMoniker": "TaskManager.cs",
+              "ToolTip": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\TaskManager.cs",
+              "RelativeToolTip": "TaskManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T16:36:19.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project06-SimpletaskManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCgAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T06:57:12.505Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

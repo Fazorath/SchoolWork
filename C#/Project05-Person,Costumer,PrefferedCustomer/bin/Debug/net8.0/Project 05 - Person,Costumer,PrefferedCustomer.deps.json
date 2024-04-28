@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Project 05 - Person,Costumer,PrefferedCustomer/1.0.0": {
+        "runtime": {
+          "Project 05 - Person,Costumer,PrefferedCustomer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project 05 - Person,Costumer,PrefferedCustomer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

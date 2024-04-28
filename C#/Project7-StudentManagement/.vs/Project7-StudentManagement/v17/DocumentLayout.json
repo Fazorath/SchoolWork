@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project7-StudentManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C56F55-9354-440F-B8A2-B6DC4C74F564}|Project7-StudentManagement.csproj|c:\\users\\yoenis\\desktop\\class code\\mainarchive\\c# repo\\project7-studentmanagement\\studentfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C56F55-9354-440F-B8A2-B6DC4C74F564}|Project7-StudentManagement.csproj|solutionrelative:studentfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C56F55-9354-440F-B8A2-B6DC4C74F564}|Project7-StudentManagement.csproj|c:\\users\\yoenis\\desktop\\class code\\mainarchive\\c# repo\\project7-studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C56F55-9354-440F-B8A2-B6DC4C74F564}|Project7-StudentManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project7-StudentManagement\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project7-StudentManagement\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwFIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T01:31:26.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project7-StudentManagement\\StudentFunctions.cs",
+              "RelativeDocumentMoniker": "StudentFunctions.cs",
+              "ToolTip": "C:\\Users\\Yoenis\\Desktop\\Class Code\\MainArchive\\C# REPO\\Project7-StudentManagement\\StudentFunctions.cs",
+              "RelativeToolTip": "StudentFunctions.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAqwJAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T01:26:36.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

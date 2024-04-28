@@ -1,0 +1,34 @@
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.AssemblyInfoInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.AssemblyInfo.cs
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.csproj.CoreCompileInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.sourcelink.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\bin\Debug\net8.0\Project4.exe
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\bin\Debug\net8.0\Project4.deps.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\bin\Debug\net8.0\Project4.runtimeconfig.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\bin\Debug\net8.0\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\bin\Debug\net8.0\Project4.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\refint\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.genruntimeconfig.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\ref\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.Properties.Resources.resources
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4\obj\Debug\net8.0\Project4.csproj.GenerateResource.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\bin\Debug\net8.0\Project4.exe
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\bin\Debug\net8.0\Project4.deps.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\bin\Debug\net8.0\Project4.runtimeconfig.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\bin\Debug\net8.0\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\bin\Debug\net8.0\Project4.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.Properties.Resources.resources
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.csproj.GenerateResource.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.AssemblyInfoInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.AssemblyInfo.cs
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.csproj.CoreCompileInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.sourcelink.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\refint\Project4.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\Project4.genruntimeconfig.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project4 - Sales Charge and Accounts\obj\Debug\net8.0\ref\Project4.dll

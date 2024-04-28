@@ -1,0 +1,29 @@
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.exe
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.deps.json
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.runtimeconfig.json
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.pdb
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.AssemblyInfoInputs.cache
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.AssemblyInfo.cs
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.csproj.CoreCompileInputs.cache
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\refint\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.pdb
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.genruntimeconfig.cache
+C:\Users\Yoenis\Desktop\School\C#\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\ref\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.exe
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.deps.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.runtimeconfig.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\bin\Debug\net8.0\Project01-Tax,Tip,Total.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.AssemblyInfoInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.AssemblyInfo.cs
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.csproj.CoreCompileInputs.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.sourcelink.json
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\refint\Project01-Tax,Tip,Total.dll
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.pdb
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\Project01-Tax,Tip,Total.genruntimeconfig.cache
+C:\Users\Yoenis\Desktop\Class Code\C# REPO\Project01-Tax,Tip,Total\Project01-Tax,Tip,Total\obj\Debug\net8.0\ref\Project01-Tax,Tip,Total.dll
