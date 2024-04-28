@@ -1,0 +1,170 @@
+1. 
+SELECT
+    firstname,
+    lastname,
+    COUNT(athletetimefk) AS number_of_races
+FROM
+    athletestbl
+LEFT JOIN timestbl ON athleteid = athletetimefk
+GROUP BY
+    firstname,
+    lastname
+ORDER BY
+    number_of_races
+DESC
+    ;
+	
+result = 23 rows
+
+2.
+SELECT
+    racenamefk,
+    racename,
+    COUNT(racenamefk) AS number_of_times_run
+FROM
+    racestbl
+JOIN racenamestbl ON racenamefk = racenameid
+GROUP BY
+    racenamefk,
+    racename
+ORDER BY
+    number_of_times_run
+DESC
+    ;
+result = 4 rows
+
+3.
+SELECT
+    racestbl.raceid AS race_id,
+    racenamestbl.racename,
+    athletestbl.firstname,
+    athletestbl.lastname,
+    timestbl.finishtime AS fastest_finishtime
+FROM
+    racestbl,
+    racenamestbl,
+    athletestbl,
+    timestbl,
+    (
+        SELECT
+            racetimefk,
+            MIN(finishtime - starttime) AS min_time
+        FROM
+            timestbl
+        GROUP BY
+            racetimefk
+    ) AS fastest_times
+WHERE
+    fastest_times.racetimefk = racestbl.raceid
+    AND fastest_times.min_time = (timestbl.finishtime - timestbl.starttime)
+    AND racestbl.racenamefk = racenamestbl.racenameid
+    AND timestbl.racetimefk = racestbl.raceid
+    AND timestbl.athletetimefk = athletestbl.athleteid;
+
+result = 14 rows
+
+4.
+SELECT
+    firstname,
+    lastname,
+    birthday
+FROM
+    racestbl,
+    racenamestbl,
+    timestbl,
+    athletestbl
+WHERE
+    raceid = racetimefk AND racenamefk = racenameid AND athletetimefk = athleteid AND racename = 'Cedar Key Dash'
+ORDER BY
+    birthday ASC
+LIMIT 1;
+
+result = 1 rows
+
+5.
+SELECT DISTINCT
+    firstname,
+    lastname
+FROM
+    athletestbl, timestbl, racestbl, racenamestbl
+WHERE
+    athleteid = athletetimefk
+    AND racetimefk = raceid
+    AND racenamefk = racenameid
+    AND racename = 'Ray''s Swim Tampa!'
+    AND athleteid IN (
+        SELECT
+            athletetimefk
+        FROM
+            timestbl, racestbl, racenamestbl
+        WHERE
+            racetimefk = raceid
+            AND racenamefk = racenameid
+            AND racename = 'Ocala Heart Association 10K Run'
+    );
+
+result = 9 rows
+
+6.
+SELECT DISTINCT
+    firstname,
+    lastname
+FROM
+    athletestbl
+JOIN phonestbl ON athleteid = athletephonefk
+JOIN timestbl ON athleteid = athletetimefk
+JOIN racestbl ON racetimefk = raceid
+JOIN racenamestbl ON racenamefk = racenameid
+WHERE
+    phone LIKE '352%' AND FLOOR(
+        DATEDIFF(CURRENT_DATE, birthday) / 365
+    ) > 18 AND racename = 'Gainesville Fun Run';
+	
+result = 7 rows
+
+7.
+SELECT DISTINCT
+    CONCAT(
+        lastname,
+        ', ',
+        firstname
+    ) AS full_name,
+    CONCAT(
+        SUBSTRING(phone, 1, 3),
+        '.',
+        SUBSTRING(phone, 4, 3),
+        '.',
+        SUBSTRING(phone, 7)
+    ) AS formatted_phone
+FROM
+    athletestbl
+JOIN phonestbl ON athleteid = athletephonefk
+
+result = 24 rows
+
+8. Query number 8 is going to be
+ALl the Males above 18 that participated in a race and their fastest times
+to show what race they need the most help in to imporve.
+
+SELECT
+    CONCAT(lastname, ', ', firstname) AS full_name,
+    racename,
+    MIN(finishtime) AS fastest_time
+FROM
+    athletestbl
+JOIN genderstbl ON genderfk = genderid
+JOIN timestbl ON athleteid = athletetimefk
+JOIN racestbl ON racetimefk = raceid
+JOIN racenamestbl ON racenamefk = racenameid
+WHERE
+    genderchar = 'M' AND FLOOR(
+        DATEDIFF(
+            CURRENT_DATE,
+            athletestbl.birthday
+        ) / 365
+    ) > 18
+GROUP BY
+    full_name,
+    racename;
+	
+result = 17 Rows

@@ -1,0 +1,94 @@
+===Database coursegrades
+
+== Table structure for table assignments
+
+|------
+|Column|Type|Null|Default
+|------
+|//**assignment_id**//|int(11)|No|
+|student_id|int(11)|Yes|NULL
+|score|decimal(5,2)|Yes|NULL
+== Dumping data for table assignments
+
+== Table structure for table finalgrades
+
+|------
+|Column|Type|Null|Default
+|------
+|//**student_id**//|int(11)|No|
+|quiz_percent|decimal(5,2)|Yes|NULL
+|assignment_percent|decimal(5,2)|Yes|NULL
+|project_percent|decimal(5,2)|Yes|NULL
+|test_percent|decimal(5,2)|Yes|NULL
+|final_score|decimal(5,2)|Yes|NULL
+|letter_grade|char(1)|Yes|NULL
+== Dumping data for table finalgrades
+
+== Stand-in structure for view finalgradesview
+
+|------
+|Column|Type|Null|Default
+|------
+|student_id|int(11)|No|0
+|first_name|varchar(50)|Yes|NULL
+|last_name|varchar(50)|Yes|NULL
+|quiz_percent|decimal(33,6)|No|0.000000
+|assignment_percent|decimal(33,6)|No|0.000000
+|project_percent|decimal(33,6)|No|0.000000
+|test_percent|decimal(33,6)|No|0.000000
+|final_score|decimal(36,6)|No|0.000000
+|letter_grade|varchar(1)|No|
+== Table structure for table projects
+
+|------
+|Column|Type|Null|Default
+|------
+|//**project_id**//|int(11)|No|
+|student_id|int(11)|Yes|NULL
+|score|decimal(5,2)|Yes|NULL
+== Dumping data for table projects
+
+== Table structure for table quizzes
+
+|------
+|Column|Type|Null|Default
+|------
+|//**quiz_id**//|int(11)|No|
+|student_id|int(11)|Yes|NULL
+|score|decimal(5,2)|Yes|NULL
+== Dumping data for table quizzes
+
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|//**student_id**//|int(11)|No|
+|first_name|varchar(50)|Yes|NULL
+|last_name|varchar(50)|Yes|NULL
+== Dumping data for table students
+
+== Table structure for table tests
+
+|------
+|Column|Type|Null|Default
+|------
+|//**test_id**//|int(11)|No|
+|student_id|int(11)|Yes|NULL
+|score|decimal(5,2)|Yes|NULL
+== Dumping data for table tests
+
+== Structure for view finalgradesview
+
+|------
+|Column|Type|Null|Default
+|------
+|student_id|int(11)|No|0
+|first_name|varchar(50)|Yes|NULL
+|last_name|varchar(50)|Yes|NULL
+|quiz_percent|decimal(33,6)|No|0.000000
+|assignment_percent|decimal(33,6)|No|0.000000
+|project_percent|decimal(33,6)|No|0.000000
+|test_percent|decimal(33,6)|No|0.000000
+|final_score|decimal(36,6)|No|0.000000
+|letter_grade|varchar(1)|No|

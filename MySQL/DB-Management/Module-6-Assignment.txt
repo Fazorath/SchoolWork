@@ -1,0 +1,124 @@
+Just chose the amount of rows.
+1.
+SELECT COUNT(DISTINCT athleteid) AS num_participants
+FROM athletestbl
+WHERE athleteid IN (
+    SELECT DISTINCT athletetimefk
+    FROM timestbl
+    WHERE racetimefk IN (
+        SELECT raceid
+        FROM racestbl
+        WHERE racetypefk = (
+            SELECT racetypeid
+            FROM racetypestbl
+            WHERE racetype = 'Run'
+        )
+    )
+);
+rows: 1
+Record: 19
+
+2.
+SELECT COUNT(*) AS num_athletes
+FROM (
+    SELECT DISTINCT a.athleteid
+    FROM athletestbl a
+    WHERE a.athleteid IN (
+        SELECT DISTINCT t.athletetimefk
+        FROM timestbl t
+        WHERE t.racetimefk IN (
+            SELECT r.raceid
+            FROM racestbl r
+            WHERE r.racenamefk = 4
+        )
+    )
+    AND TIMESTAMPDIFF(YEAR, a.birthday, CURDATE()) BETWEEN 18 AND 30
+) AS subquery;
+Rows: 1
+Record: 4
+
+3.
+SELECT COUNT(*) AS num_minor_athletes
+FROM (
+    SELECT DISTINCT athletestbl.athleteid
+    FROM athletestbl
+    INNER JOIN timestbl ON athletestbl.athleteid = timestbl.athletetimefk
+    INNER JOIN racestbl ON timestbl.racetimefk = racestbl.raceid
+    WHERE racestbl.racenamefk = 1
+    AND YEAR(racestbl.racedate) = 2022
+    AND TIMESTAMPDIFF(YEAR, athletestbl.birthday, racestbl.racedate) < 18
+) AS subquery;
+Rows: 1
+Record: 4
+
+4.
+SELECT athleteid, 
+       DATE_ADD(birthday, INTERVAL 18 YEAR) AS date_turned_18
+FROM athletestbl;
+Rows: 23
+
+5.
+SELECT athletestbl.athleteid,
+       TIMESTAMPDIFF(YEAR, athletestbl.birthday, racestbl.racedate) AS age_at_race
+FROM athletestbl
+INNER JOIN timestbl ON athletestbl.athleteid = timestbl.athletetimefk
+INNER JOIN racestbl ON timestbl.racetimefk = racestbl.raceid
+WHERE racestbl.racenamefk = 2;
+Rows: 25
+
+6.
+SELECT AVG(TIMESTAMPDIFF(SECOND, subquery.starttime, subquery.finishtime)) / 60 AS avg_completion_time_minutes
+FROM (
+    SELECT t1.starttime, t2.finishtime
+    FROM timestbl t1
+    JOIN timestbl t2 ON t1.athletetimefk = t2.athletetimefk
+    JOIN racestbl ON t1.racetimefk = racestbl.raceid
+    WHERE racestbl.racenamefk = 2
+) AS subquery;
+Rows: 1
+Record: 83.96822917
+
+7.
+SELECT AVG(TIMESTAMPDIFF(SECOND, subquery.starttime, subquery.finishtime)) / 60 AS avg_completion_time_minutes
+FROM (
+    SELECT t1.starttime, t2.finishtime
+    FROM timestbl t1
+    JOIN timestbl t2 ON t1.athletetimefk = t2.athletetimefk
+    JOIN racestbl ON t1.racetimefk = racestbl.raceid
+    JOIN athletestbl ON t1.athletetimefk = athletestbl.athleteid
+    WHERE racestbl.racenamefk = 3
+    AND athletestbl.genderfk = 1
+) AS subquery;
+Rows: 1
+Record: 203.04855967
+
+8.
+SELECT
+    AVG(
+        CASE WHEN athletestbl.genderfk = 1 THEN TIMESTAMPDIFF(
+            SECOND,
+            t1.starttime,
+            t2.finishtime
+        )
+    END
+) / 60 AS avg_male_completion_time_minutes,
+AVG(
+    CASE WHEN athletestbl.genderfk = 2 THEN TIMESTAMPDIFF(
+        SECOND,
+        t1.starttime,
+        t2.finishtime
+    )
+END
+) / 60 AS avg_female_completion_time_minutes
+FROM
+    timestbl t1
+JOIN timestbl t2 ON
+    t1.athletetimefk = t2.athletetimefk
+JOIN racestbl ON t1.racetimefk = racestbl.raceid
+JOIN athletestbl ON t1.athletetimefk = athletestbl.athleteid
+WHERE
+    YEAR(racestbl.racedate) = 2023 AND racestbl.racenamefk = 3;
+Columns: 2
+Record: male 203.418
+		female 198.782
+
