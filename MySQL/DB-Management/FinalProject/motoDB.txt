@@ -1,0 +1,200 @@
+===Database motodb
+
+== Table structure for table brands
+
+|------
+|Column|Type|Null|Default
+|------
+|//**brand_id**//|int(11)|No|
+|brand_name|varchar(50)|No|
+== Dumping data for table brands
+
+|1|Honda
+|2|Yamaha
+|3|Kawasaki
+|4|Suzuki
+|5|Ducati
+|6|Harley-Davidson
+|7|BMW
+|8|Triumph
+|9|KTM
+|10|Aprilia
+|11|Vespa
+|12|Royal Enfield
+|13|Indian
+== Table structure for table categories
+
+|------
+|Column|Type|Null|Default
+|------
+|//**category_id**//|int(11)|No|
+|category_name|varchar(100)|No|
+== Dumping data for table categories
+
+|1|Street Bikes
+|2|Sport Bikes
+|3|Cruisers
+|4|Adventure Bikes
+|5|Touring Bikes
+|6|Cafe Racers
+|7|Dual Sport Bikes
+|8|Scooters
+== Table structure for table customers
+
+|------
+|Column|Type|Null|Default
+|------
+|//**customer_id**//|int(11)|No|
+|first_name|varchar(50)|No|
+|last_name|varchar(50)|No|
+|email|varchar(100)|No|
+|address|varchar(255)|No|
+== Dumping data for table customers
+
+|1|John|Doe|john@example.com|123 Main St
+|2|Jane|Smith|jane@example.com|456 Elm St
+|3|Michael|Johnson|michael@example.com|789 Oak St
+|4|Emily|Brown|emily@example.com|456 Pine St
+|5|David|Wilson|david@example.com|789 Maple St
+|6|Emma|Johnson|emma@example.com|1010 Oak St
+|7|William|Martinez|william@example.com|2020 Elm St
+== Table structure for table manufacturers
+
+|------
+|Column|Type|Null|Default
+|------
+|//**manufacturer_id**//|int(11)|No|
+|manufacturer_name|varchar(100)|No|
+== Dumping data for table manufacturers
+
+|1|Honda Motor Co.
+|2|Yamaha Corporation
+|3|Kawasaki Heavy Industries
+|4|Suzuki Motor Corporation
+|5|Ducati Motor Holding
+|6|Harley-Davidson
+|7|Bayerische Motoren Werke AG
+|8|Triumph Motorcycles
+|9|KTM AG
+|10|Aprilia
+|11|Vespa
+|12|Royal Enfield
+|13|Indian Motorcycle
+== Table structure for table models
+
+|------
+|Column|Type|Null|Default
+|------
+|//**model_id**//|int(11)|No|
+|model_name|varchar(50)|No|
+== Dumping data for table models
+
+|1|CB500X
+|2|YZF-R6
+|3|Ninja 650
+|4|GSX-R750
+|5|Panigale V4
+|6|Sportster Iron 883
+|7|S1000RR
+|8|Street Triple
+|9|Duke 390
+|10|RSV4
+|11|Vespa Primavera
+|12|Royal Enfield Interceptor 650
+|13|Indian Scout
+== Table structure for table orders
+
+|------
+|Column|Type|Null|Default
+|------
+|//**order_id**//|int(11)|No|
+|customer_id|int(11)|No|
+|order_date|date|No|
+|total_price|decimal(10,2)|No|
+|status|varchar(50)|No|
+== Dumping data for table orders
+
+|1|1|2024-04-25|2399.00|Shipped
+|2|2|2024-04-26|4599.00|Pending
+|3|3|2024-04-27|3299.00|Delivered
+|4|4|2024-04-28|5499.00|Pending
+|5|5|2024-04-29|7999.00|Shipped
+|6|6|2024-04-30|4499.00|Shipped
+|7|7|2024-05-01|8999.00|Delivered
+== Table structure for table order_items
+
+|------
+|Column|Type|Null|Default
+|------
+|//**order_item_id**//|int(11)|No|
+|order_id|int(11)|No|
+|product_id|int(11)|No|
+|quantity|int(11)|No|
+|item_price|decimal(10,2)|No|
+== Dumping data for table order_items
+
+|1|1|1|1|7999.00
+|2|2|2|1|8999.00
+|3|3|3|1|6799.00
+|4|4|4|1|8999.00
+|5|5|5|1|11999.00
+|6|6|6|1|3999.00
+|7|7|7|1|8999.00
+== Table structure for table products
+
+|------
+|Column|Type|Null|Default
+|------
+|//**product_id**//|int(11)|No|
+|product_name|varchar(100)|No|
+|category_id|int(11)|No|
+|manufacturer_id|int(11)|No|
+|brand_id|int(11)|No|
+|model_id|int(11)|No|
+== Dumping data for table products
+
+|1|CB500X|4|1|1|1
+|2|YZF-R6|2|2|2|2
+|3|Ninja 650|1|3|3|3
+|4|GSX-R750|2|4|4|4
+|5|Panigale V4|2|5|5|5
+|6|Vespa Primavera|6|6|6|11
+|7|Royal Enfield Interceptor 650|7|7|7|12
+|8|Indian Scout|8|8|8|13
+== Table structure for table product_images
+
+|------
+|Column|Type|Null|Default
+|------
+|//**image_id**//|int(11)|No|
+|product_id|int(11)|No|
+|image_url|varchar(255)|No|
+== Dumping data for table product_images
+
+|1|1|image1.jpg
+|2|2|image2.jpg
+|3|3|image3.jpg
+|4|4|image4.jpg
+|5|5|image5.jpg
+|6|6|vespa_image.jpg
+|7|7|royalenfield_image.jpg
+== Table structure for table reviews
+
+|------
+|Column|Type|Null|Default
+|------
+|//**review_id**//|int(11)|No|
+|product_id|int(11)|No|
+|customer_id|int(11)|No|
+|rating|int(11)|No|
+|review_text|text|Yes|NULL
+|review_date|date|No|
+== Dumping data for table reviews
+
+|1|1|1|5|Great bike!|2024-04-25
+|2|2|2|4|Amazing performance|2024-04-26
+|3|3|3|3|Good value for money|2024-04-27
+|4|4|4|4|Excellent bike!|2024-04-28
+|5|5|5|5|Outstanding performance|2024-04-29
+|6|6|6|4|Love the classic design!|2024-04-30
+|7|7|7|5|Powerful and comfortable ride|2024-05-01

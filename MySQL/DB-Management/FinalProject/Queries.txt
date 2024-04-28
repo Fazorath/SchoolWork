@@ -1,0 +1,211 @@
+1) A query with SELECT, FROM, and JOIN
+# Costumer first and last name with their orderID
+SELECT
+    Orders.order_id,
+    Customers.first_name,
+    Customers.last_name
+FROM
+    Orders
+JOIN Customers ON Orders.customer_id = Customers.customer_id;
+
+2) 2 queries with SELECT, FROM, JOIN, and WHERE
+# Shipped Bikes
+SELECT
+    Orders.order_id,
+    Products.product_name
+FROM
+    Orders
+JOIN Order_Items ON Orders.order_id = Order_Items.order_id
+JOIN Products ON Order_Items.product_id = Products.product_id
+WHERE
+    Orders.status = 'Shipped';
+
+#Order total price is more than 4000
+SELECT
+    Orders.order_id,
+    Products.product_name
+FROM
+    Orders
+JOIN Order_Items ON Orders.order_id = Order_Items.order_id
+JOIN Products ON Order_Items.product_id = Products.product_id
+WHERE
+    Orders.total_price > 4000.00;
+	
+3) 3 queries that combine data from  4 tables
+# Order with the product id and the name of the product and brand
+SELECT
+    Orders.order_id,
+    Order_Items.product_id,
+    Products.product_name,
+    Brands.brand_name
+FROM
+    Orders
+JOIN Order_Items ON Orders.order_id = Order_Items.order_id
+JOIN Products ON Order_Items.product_id = Products.product_id
+JOIN Brands ON Products.brand_id = Brands.brand_id;
+
+# Order id name and their rating
+SELECT
+    Orders.order_id,
+    Customers.first_name,
+    Customers.last_name,
+    Order_Items.quantity,
+    Reviews.rating
+FROM
+    Orders
+JOIN Customers ON Orders.customer_id = Customers.customer_id
+JOIN Order_Items ON Orders.order_id = Order_Items.order_id
+JOIN Reviews ON Order_Items.product_id = Reviews.product_id;
+
+# Product name image category and manufacturer
+SELECT
+    Products.product_name,
+    Product_Images.image_url,
+    Categories.category_name,
+    Manufacturers.manufacturer_name
+FROM
+    Products
+JOIN Product_Images ON Products.product_id = Product_Images.product_id
+JOIN Categories ON Products.category_id = Categories.category_id
+JOIN Manufacturers ON Products.manufacturer_id = Manufacturers.manufacturer_id;
+
+4) 3 queries that use GROUP BY
+# How much each costumer spent
+SELECT
+    customer_id,
+    SUM(total_price) AS total_spent
+FROM
+    Orders
+GROUP BY
+    customer_id;
+	
+# How many bikes in each category
+SELECT
+    category_id,
+    COUNT(*) AS product_count
+FROM
+    Products
+GROUP BY
+    category_id;
+	
+# Product and their average rating
+SELECT
+    product_id,
+    AVG(rating) AS avg_rating
+FROM
+    Reviews
+GROUP BY
+    product_id;
+
+5) 2 queries that calculate dates and times in some way
+# Time since order was placed
+SELECT
+    order_id,
+    order_date,
+    DATEDIFF(CURDATE(), order_date) AS days_since_order
+FROM
+    Orders;
+
+# Average time to deliver order
+SELECT
+    AVG(
+        DATEDIFF(
+            order_date,
+            (
+            SELECT
+                MIN(order_date)
+            FROM
+                Orders
+            WHERE
+        STATUS
+            = 'Shipped'
+        )
+        )
+    ) AS avg_delivery_time
+FROM
+    Orders
+WHERE
+STATUS
+    = 'Delivered';
+ 
+6) 3 subqueries
+# Subquery to concatenate customer nameSELECT
+    customer_id,
+    (
+    SELECT
+        CONCAT(first_name, ' ', last_name)
+    FROM
+        Customers
+    WHERE
+        Customers.customer_id = Orders.customer_id
+) AS customer_name
+FROM
+    Orders;
+	
+# Find products with reviews
+SELECT
+    product_name,
+    (
+    SELECT
+        COUNT(*)
+    FROM
+        Reviews
+    WHERE
+        Reviews.product_id = Products.product_id
+) AS review_count
+FROM
+    Products;
+	
+# Find average rating per category
+SELECT
+    category_name,
+    (
+    SELECT
+        AVG(rating)
+    FROM
+        Reviews
+    JOIN Products ON Reviews.product_id = Products.product_id
+    JOIN Categories ON Products.category_id = Categories.category_id
+    WHERE
+        Categories.category_id = C.category_id
+) AS average_rating
+FROM
+    Categories C;
+
+7) 3 queries that use either LEFT JOIN or RIGHT JOIN
+# Shows all names and all products based on order even if non
+SELECT
+    O.order_id,
+    C.first_name AS customer_first_name,
+    C.last_name AS customer_last_name,
+    P.product_name
+FROM
+    Orders O
+LEFT JOIN Customers C ON
+    O.customer_id = C.customer_id
+RIGHT JOIN Products P ON
+    O.order_id = P.product_id;
+	
+# order id names and the order dates
+SELECT
+    Orders.order_id,
+    Customers.first_name,
+    Customers.last_name,
+    Orders.order_date
+FROM
+    Orders
+LEFT JOIN Customers ON Orders.customer_id = Customers.customer_id;
+
+# Names product order id and dates
+SELECT
+    Customers.first_name,
+    Customers.last_name,
+    Products.product_name,
+    Orders.order_id,
+    Orders.order_date
+FROM
+    Customers
+RIGHT JOIN Orders ON Customers.customer_id = Orders.customer_id
+LEFT JOIN Order_Items ON Orders.order_id = Order_Items.order_id
+LEFT JOIN Products ON Order_Items.product_id = Products.product_id
+LIMIT 25;
