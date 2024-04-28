@@ -1,0 +1,222 @@
+html {
+	background-image: url("../images/bats.gif");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	max-width: 960px;
+	width: 95%;                        /* fixed width was 800 */
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    padding: .9375em 1.875%;  /* 15 / 16; 15 / 800 x 100 */
+} 
+header img { 
+	float: left; 
+	padding-right: 1.875%;               /* 15 / 800 x 100 */  
+	width: 10.6%;
+	max-width: 85px;
+	min-width: 40px;
+} 
+header h2 {
+	font-size: 230%;
+}
+header h3 {
+	font-size: 125%;
+	padding-bottom: .75em;              /* 15 / (1.25 x 16) */
+}
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 20%;                  /* 160 / 800 x 100 */
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li:hover ul {
+	width: 100%;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
+#nav_menu ul li a.current {
+	color: orange;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
+}
+
+/* Sidebar */
+aside {
+	float: left; 
+	width: 20%;                        /* 160 / 800 x 100 */
+	padding: 1.25em 0;                 /* 20 / 16 */
+}
+#nav_list ul { 
+	width: 68.75%;                     /* 110 / 160 x 100 */
+	list-style: none;
+	padding-left: 15%;                 /* (1.5 x 16) / 160 x 100 */
+}
+#nav_list ul li { 
+	margin-bottom: .5em;
+	border: 2px solid black;
+}
+#nav_list ul li a {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: orange;
+	padding: .5em 0 .5em 7.27272%;     /* .5 x 16 / 110 x 100 */
+	color: black;
+}
+
+/* Section */
+section {
+	width: 72.5%;                       /* 580 / 800 x 100 */
+	padding: 1.25em 5% 1.25em 2.5%;     /* top and bottom: 20 / 16; right: 40 / 800 x 100; left: 20 / 800 x 100 */
+	float: right;
+}
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+section h1:first-letter { 
+	font-size: 240%;
+}
+section h2 {
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+section h3 {
+	font-size: 110%;
+	margin: .8em 0 .5em 0;
+}
+section p {
+	margin-bottom: .5em;
+}
+section a {
+	font-weight: bold;
+	color: orange;
+}
+section a:link, main a:visited { 
+    color: orange; 
+}
+section a:hover, main a:focus { 
+    color: green;
+}
+section img {
+	width: 30%;
+	max-width: 150px;
+}
+
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: .9375em 1.875%;       /* top and bottom: 15 / 16; right and left: 15 / 800 x 100 */
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		background-image: none;
+	}
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	header h2 {
+		font-size: 200%;
+	}
+	section {
+		width: 90%;
+		float: none;
+		padding-left: 5%;
+		padding-bottom: .5em; 
+	}
+	aside {
+		width: 90%;
+		float: none;
+		padding: 0 5% 1em 5%;
+	}
+	#nav_list ul {
+		width: 50%;
+		padding-left: 25%;
+		text-align: center;
+	}
+	#nav_list ul li a {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+	section h1 {
+		font-size: 130%;
+	}
+	section h1:first-letter {
+		font-size: 180%;
+	}
+}

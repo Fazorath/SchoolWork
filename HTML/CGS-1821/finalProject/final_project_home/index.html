@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempt - POV Site</title>
+    <meta name="description" content="This is a website that will have multiple videos from which you can choose from. These videos will range from POV bike rides like this one to POV car rides, and even POV rollercoaster rides.">
+    <meta name="author" content="Yoenis Hernandez">
+    <meta name="year" content="2024">
+    <meta name="class" content="CGS-1821">
+    <link rel="icon" href="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Video element for fullscreen video -->
+    <video id="fullscreen-video" autoplay loop>
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Header section -->
+    <header>
+        <!-- Logo image -->
+        <img src="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png"
+            alt="Logo">
+        <!-- Website title -->
+        <p>Exempt</p>
+        <!-- Navigation menu -->
+        <nav class="nav_menu">
+            <ul>
+                <!-- Current page link -->
+                <li><a href="index.html" class="current" >Home</a></li>
+                <!-- Other page links -->
+                <li><a href="statistics.html" >Statistics</a></li>
+                <li><a href="sportbikeInfo.html" >Sportbike Information</a></li>
+                <li><a href="formindex.html">Information Form</a></li>
+                <li><a href="projectrequirements.html" >Project Requirements</a></li>
+            </ul>
+        </nav>
+        <!-- Slick navigation menu -->
+        <nav class="slicknav_menu">
+        </nav>
+    </header>
+
+    <!-- Text content section -->
+    <div class="text-box">
+        <!-- Heading -->
+        <h2>This is my POV Website</h2>
+        <!-- Website description -->
+        <p>The plan with this website is to have multiple videos from which you can choose from. These videos will range
+            from POV bike rides like this one to POV car rides, and even POV rollercoaster rides.
+            As for now, I am working on the layout of the website and working to make everything work well with eachother
+        </p>
+        <p>As you can see if you direct your eyes towards the footer you will see 2 buttons. One for playing and one for Volume
+            Play around with them and see what happens.
+            I am excited and looking forward to adding more functionality such as a slider for volume
+            and the ability change video.</p>
+        <!-- Current abilities -->
+        <p id="abilities">Our current abilities are: <strong>Play, Pause</strong>
+        </p>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Button to toggle play/pause -->
+        <button class="round-button" onclick="togglePause()">Play</button>
+        <!-- Button to toggle volume -->
+        <button class="round-button" onclick="toggleVolume()">Vol</button>
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Exempt INC. All rights reserved.</p>
+    </footer>
+
+    <!-- jQuery initialization for slick navigation menu -->
+    <script>
+        $(document).ready(function () {
+            $('.nav_menu').slicknav({
+                prependTo: ".slicknav_menu"
+            });
+        });
+    </script>
+    <!-- JavaScript functions for toggling video playback and volume -->
+    <script>
+        function togglePause() {
+            var video = document.getElementById("fullscreen-video");
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function toggleVolume() {
+            var video = document.getElementById("fullscreen-video");
+            if (video.volume === 0) {
+                video.volume = 1;
+            } else {
+                video.volume = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

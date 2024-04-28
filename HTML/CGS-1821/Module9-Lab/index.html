@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Halloween Store</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Modified Stylesheet -->
+    <link rel="stylesheet" href="styles/personal.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+    <header>
+        <a href="index.html" target="_blank">
+            <img src="images/pumpkin.gif" alt="Floating Pumkping Gif"></a>
+        <h1 class="a">The Halloween Store</h1>
+        <h2 class="b">For the little Goblin in all of us!</h2>
+    </header>
+    <div id="navwrapperattempt"></div>
+    <nav class="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Product List</a></li>
+            <!-- Modifying the Nav for current to show. -->
+            <li class="dropdown , current"><a href="index.html">Personal</a>
+                <ul>
+                    <li><a href="HelloWorld">Hello World</a></li>
+                    <li><a href="https://github.com/Fazorath">My Github</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="index.html">Decorating Ideas</a>
+                <ul>
+                    <li><a href="Outdoor.html">Outdoor</a></li>
+                    <li><a href="Indoor.html">Indoor</a></li>
+                    <li><a href="Table.html">Table</a></li>
+                    <li><a href="Treats.html">Treats</a></li>
+                </ul>
+            </li>
+            <li><a href="#mailus">Join Email</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="mainpart">
+            <h2>Here is my favorite Haunted House!</h2>
+            <video height="275" autoplay loop muted>
+                <source src="images/hobbsgrove.mp4" type="video/mp4">
+                Your browser does not support HTML5 Video
+                <!-- I had some trouble figuring out what the flash file was and how to find or create one so i resorted to youtube. -->
+                    <object type="application/x-shockwave-flash" data="images/peanutbutterjelly.swf" width="640" height="360">
+                        <param name="movie" value="images/peanutbutterjelly.swf">
+                        <param name="allowFullScreen" value="true">
+                        <param name="wmode" value="transparent">
+                        <param name="flashvars" value="file=media/example.mp4">
+                        <!--[if IE]><param name="movie" value="images/peanutbutterjelly.swf"><![endif]-->
+                        <p>Your browser does not support the video tag or Flash. Please download the video <a href="media/example.mp4">here</a>.</p>
+                      </object>
+            </video>
+        </section>
+
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <!-- Sidebar Updates -->
+                    <li><a href="products/props.html">Pictures</a></li>
+                    <li><a href="products/costumes.html">Home<br>Videos</a></li>
+                    <li><a href="products/special.html">Haunted<br>Houses</a></li>
+                    <li><a href="products/masks.html">Scary<br>Stories</a></li>
+                </ul>
+
+            </nav>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Ben Murach</p>
+    </footer>
+    <!-- SCRIPTS FOR JQUERY AND SLICKNAV -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav_menu').slicknav({ prependTo: "#navwrapperattempt" });
+        });
+    </script>
+</body>
+
+</html>

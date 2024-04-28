@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Halloween Store</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- NEW STYLES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/c10_category.css">
+    <link rel="stylesheet" href="styles/slicknav.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+    <header>
+        <a href="index.html" target="_blank">
+            <!-- Takes you to another page on purpose to show its to home page-->
+            <img src="images/pumpkin.gif" alt="Floating Pumkping Gif"></a>
+            <h1 class="a">The Halloween Store</h1>
+            <h2 class="b">For the little Goblin in all of us!</h2>
+        </header>
+        
+        <!-- removed no current home -->
+            <nav class="nav_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Product List</a></li>
+                    <li class="dropdown"><a href="index.html">Personal</a>
+                        <!-- Adding another Dropdown to test how easy it was 
+                    just by just adding a class and the items i wanted since my css was done-->
+                        <ul>
+                            <li><a href="HelloWorld">Hello World</a></li>
+                            <li><a href="https://github.com/Fazorath">My Github</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="index.html">Decorating Ideas</a>
+                        <ul>
+                            <li><a href="Outdoor.html">Outdoor</a></li>
+                            <li><a href="Indoor.html">Indoor</a></li>
+                            <li><a href="Table.html">Table</a></li>
+                            <li><a href="Treats.html">Treats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#mailus">Join Email</a></li>
+                </ul>
+            </nav>
+    <main>
+        <div id="navwrapperattempt"></div>
+        <aside class="sidebar">
+            <nav>          
+                <ul>
+                    <li><a href="products/props.html">Props</a></li>
+                    <li><a href="products/costumes.html">Costumes</a></li>
+                    <li><a href="products/special.html">Special FX</a></li>
+                    <li><a href="products/masks.html">Masks</a></li>
+                </ul>
+    
+            </nav>
+        </aside>
+        <!-- Modified URLS -->
+        <section class="mainpart">
+            <h2>Props</h2>
+            <a target="_blank" href="products/flyingbats.html">Flying Bats</a>
+            <p>Bats flying in front of a full moon make for an eerie spectacle.
+            <br><b>Price:</b> 69.99</p>
+
+            <a target="_blank" href="products/derangedcat">20" Deranged Cat</a>
+            <p>This cat provides its own light and is perfect for a backyard haunting.
+            <br><b>Price:</b> 19.99</p>
+            
+            <a target="_blank" href="products/16rat">16" Rat</a>
+            <p>This giy is sure to shorten the stay of any unwanted house guests.
+            <br><b>Price:</b> 14.99</p>
+            
+            <a target="_blank" href="products/20rat">20" Rat</a>
+            <p>Yuch! This one will keep you awake at night.<br>
+            <b>Price:</b> 19.99</p> 
+
+            <a target="_blank" href="products/lifesizeskeleton.html">Life-size skeleton</a>
+            <p>This blown plastic skeletin will be the life of the party. Use him as is or dress him up for an even better effect.
+            <br><b>Price:</b> 14.95</p>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2022 Ben Murach</p>
+    </footer>
+    <!-- SCRIPTS FOR JQUERY AND SLICKNAV -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.js"></script>
+    <script>
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#navwrapperattempt"});
+    	});
+    	</script>
+</body>
+
+</html>
+
+

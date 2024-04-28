@@ -1,0 +1,256 @@
+html {
+    background-image: url(bats.gif);
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    border: 4px solid black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-repeat: repeat;
+    box-shadow: 10px 10px 30px black, -10px -10px 30px black;
+    background-color: white;
+}
+
+/* Menu has been put to no current page. */
+.nav_menu ul {
+    list-style: none;
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav_menu .dropdown ul li {
+    width: 130px;
+    text-align: center;
+    padding: 15px;
+}
+
+.nav_menu .dropdown ul {
+    padding: 0;
+    padding-top: 10px;
+}
+
+.nav_menu .dropdown ul li:hover {
+    background-color: gray
+}
+
+.nav_menu ul li a:hover {
+
+    color: beige;
+}
+
+.nav_menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_menu ul li {
+    float: left;
+    width: 150px;
+}
+
+.nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.nav_menu ul ul li {
+    float: none;
+}
+
+.nav_menu ul li:hover>ul {
+    display: block;
+}
+
+.nav_menu>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* SideBar ID now being used instead. */
+#sidebar ul {
+    list-style-type: none;
+    float: left;
+    margin-top: 0;
+    padding-left: 0px;
+}
+
+#sidebar ul li {
+    width: 130px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+    background-color: orange;
+    margin: 25px;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding: .5em 0 .5em .5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#sidebar ul li a:hover {
+    background-color: hwb(36 0% 8%);
+    color: green;
+}
+
+header {
+    border-bottom: 3px solid black;
+    width: 770px;
+    padding: 15px;
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+}
+
+main {
+    font-weight: 500;
+}
+
+section {
+    width: 600px;
+}
+
+
+
+section img {
+    float: left;
+    width: 200px;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+    animation: moveUpDown 0.5s ease-in-out 6 alternate;
+}
+
+section a {
+    font-weight: bolder;
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+}
+
+section h2 {
+    padding-top: 20px;
+    margin: 0px;
+}
+
+section p {
+    /* Adjusting of the margin for no Overflow */
+    padding-right: 10px;
+    margin-left: 400px;
+}
+
+/* 2nd Sidebar */
+#leftbar {
+    /* Floated right and with appropriate background.
+            Only 180px too  */
+    padding: 10px;
+    float: right;
+    width: 180px;
+    background-color: #f5DEB3;
+}
+
+/* Formatting needed for the Unordered List inside of new Sidebar */
+#leftbar ul {
+    /* Padding and Margin */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Link Formatting to black */
+#leftbar a {
+    color: black;
+}
+
+#leftbar a:hover {
+    color: green;
+}
+
+#leftbar h5 {
+    margin: 0;
+}
+
+#leftbar figure {
+    margin: 15px;
+}
+
+#leftbar img {
+    height: 74px;
+    width: 74px;
+    /* Adding width so the initial width is specified */
+    transition: width 3s linear;
+    /* Standard */
+    /* Different Browsers */
+    -webkit-transition: width 3s linear;
+    /* Safari and Chrome */
+    -moz-transition: width 3s linear;
+    /* Firefox */
+    -o-transition: width 3s linear;
+    /* Opera */
+}
+
+#leftbar img:hover {
+    width: 125px;
+}
+
+
+.a {
+    font-family: "Creepster", cursive;
+    font-weight: 700;
+    font-size: 250%;
+    margin: 0;
+    text-indent: 5px;
+}
+
+.b {
+    font-weight: 700;
+    font-size: 170%;
+    text-indent: 12px;
+    margin-bottom: 15px;
+}
+
+footer {
+    border-top: 3px solid black;
+    font-size: small;
+    height: 3em;
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    clear: both;
+}
+
+header img {
+    float: left;
+    width: 120px;
+}
+
+footer p {
+    text-align: center;
+}
+
+main h1::first-letter {
+    font-size: 190%;
+    font-weight: bold
+}
+
+p a {
+    font-weight: bolder;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end position, no movement */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up by 10px */
+    }
+}

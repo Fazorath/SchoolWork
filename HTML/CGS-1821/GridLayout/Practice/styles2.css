@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+  }
+  
+  header {
+    grid-column: 1 / span 4;
+    border: 1px solid #000;
+  }
+  
+  article {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+    border: 1px solid blue;
+  }
+  
+  aside {
+    grid-column: 4;
+    grid-row: 2 / span 2;
+    border: 1px solid red;
+
+  }
+  
+  footer {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    border: 1px solid green;
+
+  }

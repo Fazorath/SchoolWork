@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- The Google Font. I chose to do the meta link instead of the css.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Halloween Store</title>
+    <!-- The new Style sheet and the Favicon. Css was never indicated whether 
+        to put inside of styles folder or not so i left it outside. -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="products.css">
+</head>
+
+
+<body>
+
+    <header>
+        <!-- Usage of image Maps and the circle shape -->
+        <img src="images/pumpkin.gif" alt="Floating Pumkping Gif" usemap="#map">
+        <map name="map">
+            <area target="_blank" alt="Header Image" title="Header Image" href="Index.html" coords="42,40,65"
+                shape="circle">
+        </map>
+        <h1 class="a">The Halloween Store</h1>
+        <h2 class="b">For the little Goblin in all of us!</h2>
+    </header>
+
+
+    <nav class="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Product List</a></li>
+            <li class="dropdown"><a href="index.html">Personal</a>
+                <!-- Adding another Dropdown to test how easy it was 
+            just by just adding a class and the items i wanted since my css was done-->
+                <ul>
+                    <li><a href="HelloWorld">Hello World</a></li>
+                    <li><a href="https://github.com/Fazorath">My Github</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="index.html">Decorating Ideas</a>
+                <ul>
+                    <li><a href="Outdoor.html">Outdoor</a></li>
+                    <li><a href="Indoor.html">Indoor</a></li>
+                    <li><a href="Table.html">Table</a></li>
+                    <li><a href="Treats.html">Treats</a></li>
+                </ul>
+            </li>
+            <li><a href="#mailus">Join Email</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <nav>
+            <!-- Assigned Sidebar ID -->
+            <aside id="sidebar">
+                <ul>
+                    <li><a href="products/props.html">Props</a></li>
+                    <li><a href="products/costumes.html">Costumes</a></li>
+                    <li><a href="products/special.html">Special FX</a></li>
+                    <li><a href="products/masks.html">Masks</a></li>
+                </ul>
+            </aside>
+        </nav>
+        <!-- New Sidebar and ID assignment + Needed List and Figures -->
+        <aside id="leftbar">
+            <h5>Costumers who bought this product also purchased: </h5>
+            <ul>
+                <!-- A figure which includes the image and its alt text plus the fig caption
+                    Which includes the needed text. -->
+                <li>
+                    <figure><img src="images/flying_bats.jpg" alt="Flying Bats">
+                        <figcaption><a href="products/costumes.html" target="_blank">Flying Bats</a></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="images/rat1.jpg" alt="16' Ugly Rat">
+                        <figcaption><a href="products/props.html" target="_blank">16' Ugly Rat</a></figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="images/strobe1.jpg" alt="Mini Strobe Light">
+                        <figcaption><a href="products/special.html" target="_blank">Mini Strobe Light</a></figcaption>
+                    </figure>
+                </li>
+
+            </ul>
+        </aside>
+        <section>
+            <h2><a href="products/cats.html">20' Deranged Cat</a></h2>
+            <a href="products/cats.html"><img src="images/cat1.jpg" alt="Big Boy Cat of da week"></a>
+            <p>This cat provides its own light and is perfect for a backyard haunting.<br><br><strong>Price:
+                </strong>19.99</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Ben Murach</p>
+    </footer>
+
+</body>
+
+</html>

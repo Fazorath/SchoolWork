@@ -1,0 +1,30 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  
+  .header {
+    grid-column: 1 / -1; /* Span across all columns */
+    background-color: lightcoral;
+  }
+  
+  .menu {
+    grid-row: 2 / 4; /* Span across two rows */
+    background-color: lightgreen;
+  }
+  
+  .main-content {
+    background-color: lightblue;
+  }
+  
+  .sidebar {
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .footer {
+    grid-column: 1 / -1; /* Span across all columns */
+    background-color: lightpink;
+  }

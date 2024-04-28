@@ -1,0 +1,268 @@
+/* CHANGED AS MUCH AS POSSIBLE TO PERCENTANGE AND EM*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(bats.gif);
+}
+
+body {
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 4px solid black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-repeat: repeat;
+    box-shadow: 10px 10px 30px black, -10px -10px 30px black;
+    background-color: white;
+    font-size: 100%;
+}
+
+header {
+    border-bottom: 3px solid black;
+    width: 100%;
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+}
+
+main {
+    padding-right: 0.625%;
+    font-weight: 500;
+}
+section {
+    float: right;
+    width: 80%;
+    padding: 0 1.875% 0 1.875%;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: left;
+}
+
+aside {
+    float: left;
+    width: 20%;
+}
+
+.nav_menu ul {
+    list-style: none;
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 1.25%;
+    text-align: center;
+
+}
+
+.nav_menu .current a {
+    color: orange;
+}
+
+.nav_menu .dropdown ul li {
+    text-align: center;
+    padding: 5.875% 0% 5.875% 0%;
+    width: 100%;
+}
+
+
+.nav_menu .dropdown ul {
+    padding: 0;
+    padding-top: 1.25%;
+}
+
+.nav_menu .dropdown ul li:hover {
+    background-color: gray
+}
+
+.nav_menu ul li a:hover {
+    color: beige;
+}
+
+.nav_menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+
+.nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 18.75%;
+}
+
+
+.nav_menu ul ul li {
+    float: none;
+}
+
+.nav_menu ul li:hover>ul {
+    display: block;
+}
+
+.nav_menu>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+aside nav ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+aside nav ul li {
+    width: 80%;
+    margin-bottom: .5em;
+    border: 2px solid black;
+    background-color: orange;
+    margin: 15.375%;
+}
+
+aside nav ul li a {
+    display: block;
+    padding: .7em 0 .7em .7em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+aside ul li a:hover {
+    background-color: hwb(36 0% 8%);
+    color: green;
+}
+
+
+
+footer {
+    border-top: 3px solid black;
+    font-size: small;
+    height: 3em;
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    clear: both;
+}
+
+/* SCALABLE IMAGES */
+header img {
+    float: left;
+    padding-left: 1.875%;
+    padding-bottom: 1.25%;
+    width: 15%;
+    min-width: 5%;
+    height: auto;
+}
+
+
+footer p {
+    text-align: center;
+}
+
+main h2::first-letter {
+    font-size: 190%;
+    font-weight: bold
+}
+
+
+p a {
+    font-weight: bolder;
+}
+
+a {
+    color: orange;
+    
+}
+
+.a {
+    font-weight: 700;
+    font-size: 250%;
+    text-indent: 5px;
+    margin: 0;
+    padding-bottom: 3.125%;
+}
+
+.b {
+    font-weight: 700;
+    font-size: 170%;
+    text-indent: 12px;
+    padding-bottom: 3.125%;
+    margin: 0;
+}
+
+.catimg {
+    height: auto;
+    width: 25%;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+    html {
+        background-image: none;
+    }
+
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width:667px) {
+    .nav_menu {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    header img {
+        padding-bottom: 5%;
+    }
+
+    aside{
+        width: 100%;
+        padding-right: 10%
+    }
+    
+    section {
+        width: 100%;
+    }
+
+    aside ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    header {
+        font-size: 60%;
+    }
+
+    main h1 {
+        font-size: 60%;
+    }
+
+}

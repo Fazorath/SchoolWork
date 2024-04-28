@@ -1,0 +1,169 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set common styles for the body and HTML */
+body, html {
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Ensure relative positioning for the body */
+}
+
+/* Additional styles for the body */
+body {
+    overflow: hidden; /* Prevent scrollbars */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the header and footer */
+header, footer {
+    color: black;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; /* Prevent header and footer from shrinking */
+}
+
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Styles for the logo image */
+header img {
+    max-height: 3em; /* Adjust height as needed */
+    margin-right: 1em;
+    margin-left: 3em; /* Pushes the image to the left */
+}
+
+/* Styles for the company name */
+header p {
+    margin-right: auto;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Styles for the main content */
+main {
+    align-self: center;
+    background-color: white;
+    padding: 0em 3em 3em 3em;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0em 1em 1em 1em;
+    max-width: 1000px;
+}
+
+/* Styles for the navigation menu */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Styles for navigation menu items */
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Styles for navigation menu links */
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Hover styles for navigation menu links */
+nav ul li a:hover {
+    color: red;
+}
+
+/* Styles for the last navigation menu item */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Styles for the currently active navigation menu item */
+.current {
+    color: red;
+}
+
+/* Styles for the slick navigation menu */
+.slicknav_menu {
+    display: none;
+}
+
+/* Styles for the footer */
+footer {
+    color: black;
+    width: 100%;
+    text-align: center; /* Position the footer at the bottom */
+}
+
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+/* Styles for table header and data cells */
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Styles for the table footer */
+tfoot {
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Styles for the table caption */
+caption {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 700px) {
+    /* Hide the regular navigation menu */
+    .nav_menu {
+        display: none;
+    }
+    /* Display the slick navigation menu */
+    .slicknav_menu {
+        display: block;
+        color: black;
+    }
+    /* Additional styles as needed */
+}

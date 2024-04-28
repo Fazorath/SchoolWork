@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="styles/StatisticsStyle.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="icon" href="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png">
+
+    <!-- External JavaScript libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.min.js"></script>
+    <!-- Title of the webpage -->
+    <title>Responsive Website with Table</title>
+</head>
+<body>
+    <header>
+        <!-- Logo image -->
+        <img src="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png"
+            alt="Logo">
+        <!-- Company name -->
+        <p>Exempt</p>
+        <!-- Navigation menu -->
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="statistics.html">Statistics</a></li>
+                <li><a href="sportbikeInfo.html">Sportbike Information</a></li>
+                <li><a href="formindex.html">Information Form</a></li>
+                <li><a href="projectrequirements.html">Project Requirements</a></li>
+            </ul>
+        </nav>
+        <!-- Slick navigation menu -->
+        <nav class="slicknav_menu">
+        </nav>
+    </header>
+
+    <main>
+        <h2>Sportbike Statistics</h2>
+        <!-- Description of the table -->
+        <p>This table displays information about various motorcycles, including their names, locations, estimated time to escape, and the corresponding police departments.
+        It provides insights into potential scenarios involving motorcycle pursuits.</p>
+        <!-- Table containing bike statistics -->
+        <table>
+            <caption>Known and Tested Bike Statistics</caption>
+            <thead>
+                <!-- Table header row -->
+                <tr>
+                    <th>Bike Name</th>
+                    <th>Location</th>
+                    <th>Run Away Time</th>
+                    <th>Police Dept</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table data rows -->
+                <tr>
+                    <td>Ninja 300</td>
+                    <td>Downtown</td>
+                    <td>15 mins</td>
+                    <td>PD</td>
+                </tr>
+                <tr>
+                    <td>CBR 600</td>
+                    <td>Suburbs</td>
+                    <td>20 mins</td>
+                    <td>ACPD</td>
+                </tr>
+                <tr>
+                    <td>GSX-R 750</td>
+                    <td>Highway</td>
+                    <td>10 mins</td>
+                    <td>GPD</td>
+                </tr>
+                <tr>
+                    <td>R1</td>
+                    <td>Countryside</td>
+                    <td>18 mins</td>
+                    <td>CPD</td>
+                </tr>
+                <tr>
+                    <td>Hayabusa</td>
+                    <td>Mountains</td>
+                    <td>25 mins</td>
+                    <td>MPD</td>
+                </tr>
+                <tr>
+                    <td>YZF-R6</td>
+                    <td>City</td>
+                    <td>12 mins</td>
+                    <td>GPD</td>
+                </tr>
+                <tr>
+                    <td>Ducati Panigale V4</td>
+                    <td>Racetrack</td>
+                    <td>8 mins</td>
+                    <td>RPD</td>
+                </tr>
+                <tr>
+                    <td>Kawasaki Z900</td>
+                    <td>Urban</td>
+                    <td>22 mins</td>
+                    <td>GPD</td>
+                </tr>
+            </tbody>
+            <!-- Table footer -->
+            <tfoot>
+                <tr>
+                    <td colspan="4">Result = Uncatchable</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- Additional information -->
+        <p>Evading the police on a motorcycle can be tempting due to the vehicle's agility and speed.
+        Additionally, the motorcycle's compact size enables quick maneuvers providing opportunities to outpace pursuers. 
+        It's crucial to recognize the risks involved, including the potential for accidents, legal repercussions, 
+        and heightened police response tactics like helicopter pursuit or roadblocks.</p>
+    </main>
+
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 Exempt INC. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript script -->
+    <script>
+        $(document).ready(function () {
+            $('.nav_menu').slicknav({
+                prependTo: ".slicknav_menu"
+            });
+        });
+    </script>
+</body>
+</html>

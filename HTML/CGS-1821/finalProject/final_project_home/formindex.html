@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <!-- Author, Semester, Professor, Class, and Description -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles/FormStyle.css">
+    <link rel="icon" href="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- External Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.min.js"></script>
+    <!-- Title -->
+    <title>Final Form Project</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <img src="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png"
+            alt="Logo">
+        <!-- Title -->
+        <p>Exempt</p>
+        <!-- Navigation -->
+        <nav class="nav_menu">
+            <ul>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="sportbikeInfo.html">Sportbike Information</a></li>
+                <li><a id="current" href="formindex.html">Information Form</a></li>
+                <li><a href="projectrequirements.html">Project Requirements</a></li>
+            </ul>
+        </nav>
+        <!-- Slick Navigation Menu -->
+        <nav class="slicknav_menu">
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Form Section -->
+        <h2>Biker Information Form</h2>
+        <form id="contactForm" action="confirmed.html?favoriteBike=selectedBike" method="post">
+            <!-- Personal Information -->
+            <fieldset class="personalinfo">
+                <legend>Personal Information</legend>
+                <!-- Full Name -->
+                <div class="formItem">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your full name please..." required>
+                </div>
+                <!-- Email -->
+                <div class="formItem">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email please..." required>
+                </div>
+                <!-- Phone Number -->
+                <div class="formItem">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <!-- Date of Birth -->
+                <div class="formItem">
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+            </fieldset>
+            <!-- Preferences -->
+            <fieldset class="preferences">
+                <legend>Preferences</legend>
+                <!-- Bike Color -->
+                <div class="form-group">
+                    <label for="color">Bike Color:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <!-- Escape Options -->
+                <div class="form-group">
+                    <label>Choose Your Escape Option:</label><br>
+                    <div class="escape">
+                        <input type="radio" id="option1" name="option" value="option1">
+                        <label for="option1">Mount Chiliead</label><br>
+                        <input type="radio" id="option2" name="option" value="option2">
+                        <label for="option2">Open Highway</label><br>
+                        <input type="radio" id="option3" name="option" value="option3">
+                        <label for="option3">Explosive End</label>
+                    </div>
+                </div>
+                <!-- Favorite Bike -->
+                <div class="form-group">
+                    <label for="favoriteBike">Bike of Choice:</label>
+                    <select id="favoriteBike" name="favoriteBike">
+                        <option value="Yamaha R1M">Yamaha R1M</option>
+                        <option value="BMW M1000RR">BMW M1000RR</option>
+                        <option value="Ducati Panigale 4VR">Ducati Panigale 4VR</option>
+                    </select>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+                </div>
+            </fieldset>
+            <!-- Confirmation -->
+            <fieldset class="confirm">
+                <!-- Agreement Checkbox -->
+                <div class="agreeform">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the terms and conditions.</label>
+                </div>
+                <!-- Form Controls -->
+                <div class="confirmform">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Copyright Notice -->
+        <p>&copy; 2024 Exempt INC. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        $(document).ready(function () {
+            // Initialize slicknav menu
+            $('.nav_menu').slicknav({
+                prependTo: ".slicknav_menu"
+            });
+        });
+    </script>
+</body>
+
+</html>

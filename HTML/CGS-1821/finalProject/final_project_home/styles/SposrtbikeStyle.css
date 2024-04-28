@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    /* Ensure relative positioning for the body */
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header, footer {
+    color: black;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+    /* Prevent header and footer from shrinking */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+header img {
+    max-height: 3em;
+    /* Adjust height as needed */
+    margin-right: 1em;
+    margin-left: 3em;
+    /* Pushes the image to the left */
+}
+header p {
+    margin-right: auto;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+main {
+    
+    align-self: center;
+    background-color: white;
+    padding: 3em;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0em 1em 1em 1em;
+    max-width: 1000px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+nav ul li a:hover {
+    color: red;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+ul {
+    padding-left: 30px; /* Adjust the value as needed */
+}
+
+.current {
+    color: red;
+}
+.slicknav_menu {
+    display: none;
+}
+footer {
+    color: black;
+    width: 100%;
+    /* Position the footer at the bottom */
+    text-align: center;
+}
+.motorcycle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.motorcycle {
+    width: calc(50% - 10px); /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+.panel img {
+    max-width: 100%;
+    height: auto;
+    max-height: 220px; /* Set a fixed height for the images */
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, opacity 1s ease; /* Add opacity transition */
+    opacity: 0; /* Initially set opacity to 0 */
+}
+
+.panel.open {
+    max-height: 600px; /* Set a value for max-height */
+    opacity: 1; /* Set opacity to 1 when panel is open */
+}
+
+
+.panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+main h2{
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .motorcycle {
+        width: 100%; /* Change to full width on smaller screens */
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .nav_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+        color: black;
+    }}

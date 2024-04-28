@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Halloween Store</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- NEW STYLES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/c9_category.css">
+    <link rel="stylesheet" href="styles/slicknav.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+    <header>
+        <a href="index.html" target="_blank">
+            <!-- Takes you to another page on purpose to show its to home page-->
+            <img src="images/pumpkin.gif" alt="Floating Pumkping Gif"></a>
+        <h1 class="a">The Halloween Store</h1>
+        <h2 class="b">For the little Goblin in all of us!</h2>
+    </header>
+    <div id="navwrapperattempt"></div>
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Product List</a></li>
+                <li class="dropdown"><a href="index.html">Personal</a>
+                    <!-- Adding another Dropdown to test how easy it was 
+                just by just adding a class and the items i wanted since my css was done-->
+                    <ul>
+                        <li><a href="HelloWorld">Hello World</a></li>
+                        <li><a href="https://github.com/Fazorath">My Github</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="index.html">Decorating Ideas</a>
+                    <ul>
+                        <li><a href="Outdoor.html">Outdoor</a></li>
+                        <li><a href="Indoor.html">Indoor</a></li>
+                        <li><a href="Table.html">Table</a></li>
+                        <li><a href="Treats.html">Treats</a></li>
+                    </ul>
+                </li>
+                <li><a href="#mailus">Join Email</a></li>
+            </ul>
+        </nav>
+
+    <main>
+        <aside class="sidebar">
+            <nav>          
+                <ul>
+                    <li><a href="products/props.html">Props</a></li>
+                    <li><a href="products/costumes.html">Costumes</a></li>
+                    <li><a href="products/special.html">Special FX</a></li>
+                    <li><a href="products/masks.html">Masks</a></li>
+                </ul>
+    
+            </nav>
+        </aside>
+        <section class="mainpart">
+            <h2>Special effects</h2>
+            <a target="_blank" href="products/blacklight.html">Black Light</a>
+            <p>Create that creepy glow-in-the-dark effect with this powerful black light.
+            <br><b>Price:</b> 19.99</p>
+
+            <a target="_blank" href="products/fogmachine.html">Fog Machine</a>
+            <p>The perfect fog machine for the home haunter.
+            <br><b>Price:</b> 34.99</p>
+            
+            <a target="_blank" href="products/fogjuice.html">Fog Juice (1qt.)</a>
+            <p>Fill up your fog machine to create an eerie affect.
+            <br><b>Price:</b> 9.99</p>
+            
+            <a target="_blank" href="products/skullfogger">Skull Fogger</a>
+            <p>This fogger puts out a whopping 2,800 cubic feet of fog per minute. Comes with a 10-foot remote control.<br>
+            <b>Price:</b> 39.95</p> 
+
+            <a target="_blank" href="products/blackministrobelight.html">Black Mini Strobe Light</a>
+            <p>Perfect for creating that spot flash effect. Includes mounting bracket.
+            <br><b>Price:</b> 13.99</p>
+            
+            <a target="_blank" href="products/thunderandlightning">Thunder and lightning Machine</a>
+            <p>Flash! Boom! Create your own realistic thunder and lightning effects!
+            <br><b>Price:</b> 99.99</p>
+            
+                
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2022 Ben Murach</p>
+    </footer>
+    <!-- SCRIPTS FOR JQUERY AND SLICKNAV -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.js"></script>
+    <script>
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#navwrapperattempt"});
+    	});
+    	</script>
+</body>
+
+</html>
+
+

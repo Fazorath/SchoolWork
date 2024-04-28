@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Halloween Store</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- NEW STYLES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main_rwd.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" target="_blank">
+            <!-- Takes you to another page on purpose to show its to home page-->
+            <img src="images/pumpkin.gif" alt="Floating Pumkping Gif"></a>
+        <h1 class="a">The Halloween Store</h1>
+        <h2 class="b">For the little Goblin in all of us!</h2>
+    </header>
+    <div id="navwrapperattempt"></div>
+    <nav class="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Product List</a></li>
+            <li class="dropdown"><a href="index.html">Personal</a>
+                <!-- Adding another Dropdown to test how easy it was 
+                just by just adding a class and the items i wanted since my css was done-->
+                <ul>
+                    <li><a href="HelloWorld">Hello World</a></li>
+                    <li><a href="https://github.com/Fazorath">My Github</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="index.html">Decorating Ideas</a>
+                <ul>
+                    <li><a href="Outdoor.html">Outdoor</a></li>
+                    <li><a href="Indoor.html">Indoor</a></li>
+                    <li><a href="Table.html">Table</a></li>
+                    <li><a href="Treats.html">Treats</a></li>
+                </ul>
+            </li>
+            <li class="current"><a href="#mailus">Join Email</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Please Enter the following Information:</h2>
+
+            <form action="subscribe.html" method="POST">
+                <div>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" value="" required>
+                </div>
+                <div>
+                    <label for="lname">Zip-Code:</label>
+                    <input type="numbers" id="lname" name="lname" value="0000-0000" required>
+                    
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <input type="submit" value="Subscribe">
+            </form>
+
+        </section>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="products/props.html">Props</a></li>
+                    <li><a href="products/costumes.html">Costumes</a></li>
+                    <li><a href="products/special.html">Special FX</a></li>
+                    <li><a href="products/masks.html">Masks</a></li>
+                </ul>
+
+            </nav>
+        </aside>
+
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2022 Ben Murach</p>
+    </footer>
+    <!-- SCRIPTS FOR JQUERY AND SLICKNAV -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav_menu').slicknav({ prependTo: "#navwrapperattempt" });
+        });
+    </script>
+
+</body>
+
+</html>

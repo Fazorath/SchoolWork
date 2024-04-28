@@ -1,0 +1,143 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML element styles */
+body, html {
+    background-color: #f5f5f5; /* Background color */
+    height: 100%;
+    width: 100%;
+    max-width: 2000px; /* Maximum width */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Font family */
+    position: relative; /* Ensure relative positioning for the body */
+}
+
+/* Header and footer styles */
+header, footer {
+    color: black;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; /* Prevent header and footer from shrinking */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Header image styles */
+header img {
+    max-height: 3em; /* Adjust height as needed */
+    margin-right: 1em; /* Margin right */
+    margin-left: 3em; /* Margin left */
+}
+
+/* Header paragraph styles */
+header p {
+    margin-right: auto; /* Margin right auto */
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Main section styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 3em;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto; /* Center horizontally */
+    max-width: 1000px;
+}
+
+/* Requirements section styles */
+.requirements {
+    width: 48%; /* Set width to 48% to accommodate margin */
+    margin-bottom: 20px; /* Add margin between sections */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust width of sections for smaller screens */
+    .requirements {
+        width: 80%;
+    }
+}
+
+
+/* Navigation menu styles */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Navigation menu list item styles */
+nav ul li {
+    margin-right: 20px; /* Margin right */
+}
+
+/* Navigation menu link styles */
+nav ul li a {
+    color: black; /* Color */
+    text-decoration: none; /* Text decoration */
+    font-weight: bold; /* Font weight */
+    font-size: large; /* Font size */
+}
+
+/* Navigation menu link hover styles */
+nav ul li a:hover {
+    color: red; /* Hover color */
+}
+
+/* Last child of navigation menu list item styles */
+nav ul li:last-child {
+    margin-right: 0; /* Margin right */
+}
+
+/* Current page link styles */
+.current {
+    color: red; /* Color */
+}
+
+/* Slick navigation menu styles */
+.slicknav_menu {
+    display: none; /* Display none */
+}
+
+/* Footer styles */
+footer {
+    color: black;
+    width: 100%;
+    text-align: center; /* Text align center */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    /* Hide default navigation menu */
+    .nav_menu {
+        display: none; /* Display none */
+    }
+
+    /* Display slick navigation menu */
+    .slicknav_menu {
+        display: block; /* Display block */
+    }
+}

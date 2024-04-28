@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Your Name
+        Semester: Spring 2024
+        Professor: Professor Smith
+        Class: CSC101
+        Description: This is the main page of my website.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Final Form Project</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png"
+            alt="Logo">
+        <p>Final Form Project</p>
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="https://youtu.be/dH15X1Q4mwc?si=oCCCNv9hMgkVRaE0&t=403" target="_blank">Brian636</a></li>
+                <li><a href="https://youtu.be/RspPDCoe5g4?si=jNmeqLtAfIWm-47B&t=1009" target="_blank">FastlaneD</a></li>
+                <li><a href="https://youtu.be/OV2lx2x_ru8?si=nyRRInYeXBws0WF-" target="_blank">GixxerBrah</a></li>
+            </ul>
+        </nav>
+        <nav class="slicknav_menu">
+        </nav>
+    </header>
+
+    <main>
+        <h2>Personal Booking Form</h2>
+        <form id="contactForm" action="confirmed.html?favoriteBike=selectedBike" method="post">
+            <fieldset class="personalinfo">
+                <legend>Personal Information</legend>
+                <div class="formItem">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your full name please..." required>
+                </div>
+                <div class="formItem">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email please..." required>
+                </div>
+                <div class="formItem">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="formItem">
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+            </fieldset>
+            <fieldset class="preferences">
+                <legend>Preferences</legend>
+                <div class="form-group">
+                    <label for="color">Bike Color:</label>
+                    <input type="color" id="color" name="color" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Choose Your Escape Option:</label><br>
+                    <div class="escape">
+                        <input type="radio" id="option1" name="option" value="option1">
+                        <label for="option1">Mount Chiliead</label><br>
+                        <input type="radio" id="option2" name="option" value="option2">
+                        <label for="option2">Open Highway</label><br>
+                        <input type="radio" id="option3" name="option" value="option3">
+                        <label for="option3">Explosive End</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="favoriteBike">Bike of Choice:</label>
+                    <select id="favoriteBike" name="favoriteBike">
+                        <option value="Yamaha R1M">Yamaha R1M</option>
+                        <option value="BMW M1000RR">BMW M1000RR</option>
+                        <option value="Ducati Panigale 4VR">Ducati Panigale 4VR</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="confirm">
+                <div class="agreeform">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the terms and conditions.</label>
+                </div>
+                <div class="confirmform">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exempt INC. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

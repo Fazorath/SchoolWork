@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "header header header"
+      "nav content sidebar"
+      "footer footer footer";
+  }
+  
+  .item {
+    padding: 20px;
+    color: white;
+  }
+  
+  .header { background-color: steelblue; grid-area: header; }
+  .nav { background-color: seagreen; grid-area: nav; }
+  .content { background-color: tomato; grid-area: content; }
+  .sidebar { background-color: gold; grid-area: sidebar; }
+  .footer { background-color: slategray; grid-area: footer; }

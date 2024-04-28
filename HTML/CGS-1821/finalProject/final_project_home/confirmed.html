@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Author: Your Name
+        Semester: Spring 2024
+        Professor: Professor Smith
+        Class: CSC101
+        Description: Thank you page for form submission.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/FormStyle.css">
+    <title>Thank You for Submitting your information</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/sports-motorbike-sports-bike-sports-motorbike-transparent-background-ai-generated-free-png.png"
+            alt="Logo">
+        <p>Exempt</p>
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="sportbikeInfo.html">Sporstbike Information</a></li>
+                <li><a href="formindex.html">Information Form</a></li>
+                <li><a href="projectrequirements.html">Project Requirements</a></li>
+            </ul>
+        </nav>
+        <nav class="slicknav_menu">
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank You for Submitting!</h2>
+        <div class="confirmation-text">
+            <p>Thank you for submitting your booking details. We appreciate your interest.</p>
+            <p>Your chosen bike, based on your preference, is:</p>
+            <div id="chosenBikeImageDiv">
+                <!-- Image will be inserted here dynamically -->
+                <img src="" alt="Chosen Bike" id="chosenBikeImage" style="max-width: 400px;">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exempt INC. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for image change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const bikeImages = {
+                "Yamaha R1M": "images/yamaha.jpg",
+                "BMW M1000RR": "images/2023_bmw_s1000rr_01.webp",
+                "Ducati Panigale 4VR": "images/Panigale-V4-01-hero-1600x1000.webp"
+                // Add more bike options as needed
+            };
+
+            // Get the query parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const favoriteBike = urlParams.get('favoriteBike');
+
+            // Get the image element
+            const chosenBikeImage = document.getElementById('chosenBikeImage');
+
+            // Check if the favoriteBike is in the bikeImages object
+            if (favoriteBike && bikeImages[favoriteBike]) {
+                // Set the src attribute of the image to the selected bike's image
+                chosenBikeImage.src = bikeImages[favoriteBike];
+                chosenBikeImage.alt = favoriteBike; // Set alt text to the bike's name
+            } else {
+                // If no image found, display a default image or message
+                chosenBikeImageDiv.innerHTML = "<p>No image available for the chosen bike.</p>";
+            }
+        });
+    </script>
+</body>
+
+</html>
